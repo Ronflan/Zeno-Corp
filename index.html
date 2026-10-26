@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090812">
+<meta name="description" content="L'application officielle de la Zeno Corp, équipe gaming.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/zeno-192.png">
+<link rel="apple-touch-icon" href="icons/zeno-192.png">
+<title>ZENO CORP</title>
+<style>
+:root{--bg:#090812;--panel:#151322;--panel2:#201a35;--purple:#a855f7;--pink:#e879f9;--text:#f7f3ff;--muted:#aaa2bd;--line:#302842}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#24103e 0,#090812 48%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+header{padding:22px 18px 12px;display:flex;align-items:center;gap:12px;max-width:760px;margin:auto}
+.logo{width:48px;height:48px;border:2px solid var(--purple);border-radius:14px;display:grid;place-items:center;font-weight:1000;font-style:italic;background:linear-gradient(135deg,#2b1246,#0b0913);box-shadow:0 0 24px #a855f744}
+.brand{font-size:19px;font-weight:950;letter-spacing:1.5px}.tag{font-size:11px;color:var(--muted);letter-spacing:2px}
+main{max-width:760px;margin:auto;padding:8px 16px 100px}
+.hero{padding:24px 20px;border:1px solid #67349a;border-radius:24px;background:linear-gradient(135deg,#321253cc,#171125 70%);position:relative;overflow:hidden}
+.hero:after{content:"Z";position:absolute;right:6px;bottom:-56px;font-size:210px;font-weight:1000;color:#ffffff08;font-style:italic}
+.kicker{font-size:11px;letter-spacing:3px;color:#e9b7ff;font-weight:800}.hero h1{font-size:34px;line-height:1.02;margin:12px 0}.hero p{color:#d0c5df;max-width:400px;font-size:14px;line-height:1.5}
+.pill{display:inline-block;border:1px solid #9850cf;background:#7c2ab52b;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.6px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);padding:16px;border-radius:18px;min-height:112px}
+.icon{font-size:24px}.card h3{font-size:15px;margin:8px 0 4px}.card p{font-size:12px;color:var(--muted);margin:0;line-height:1.45}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin:26px 2px 12px}.section-title h2{font-size:18px;margin:0}.small{color:var(--muted);font-size:11px}
+.list{display:grid;gap:10px}.row{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:13px}.badge{width:42px;height:42px;border-radius:12px;background:#38204d;display:grid;place-items:center;font-size:20px}.row strong{display:block;font-size:14px}.row span{font-size:12px;color:var(--muted)}
+button{font:inherit;color:inherit;cursor:pointer}.tabs{position:fixed;bottom:0;left:0;right:0;background:#0d0a16f5;backdrop-filter:blur(16px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:2px;padding:8px 6px max(10px,env(safe-area-inset-bottom));z-index:10}
+.tab{flex:1;max-width:145px;border:0;background:transparent;color:var(--muted);padding:8px 2px;border-radius:12px;font-size:10px;font-weight:700}.tab b{display:block;font-size:19px;margin-bottom:3px}.tab.active{color:white;background:#5d278c66}
+.page{display:none}.page.active{display:block}
+.action{border:0;border-radius:12px;padding:11px 14px;background:linear-gradient(90deg,#9333ea,#c026d3);font-weight:800;margin-top:6px}
+input,textarea{width:100%;background:#0d0a16;border:1px solid var(--line);color:white;border-radius:10px;padding:11px;margin:6px 0 12px}
+footer{text-align:center;color:#716981;font-size:10px;margin:26px 0 0}
+@media(min-width:600px){.hero h1{font-size:46px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<header><div class="logo">ZC</div><div><div class="brand">ZENO CORP</div><div class="tag">PLAY AS ONE.</div></div></header>
+<main>
+<section class="page active" id="home">
+  <div class="hero"><div class="kicker">BIENVENUE DANS L'ÉQUIPE</div><h1>WE ARE<br>ZENO CORP.</h1><p>Une équipe. Une ambition. On joue ensemble, on progresse ensemble.</p><span class="pill">🎮 GAMING • ESPORT</span></div>
+  <div class="grid">
+    <div class="card"><div class="icon">👥</div><h3>Notre équipe</h3><p>Découvre les membres et leurs rôles.</p></div>
+    <div class="card"><div class="icon">🎬</div><h3>Nos vidéos</h3><p>Retrouve les vidéos et les Shorts.</p></div>
+    <div class="card"><div class="icon">🏆</div><h3>Compétitions</h3><p>Les matchs et les résultats à venir.</p></div>
+    <div class="card"><div class="icon">📣</div><h3>Annonces</h3><p>Les nouvelles de la Zeno Corp.</p></div>
+  </div>
+  <div class="section-title"><h2>Dernières annonces</h2><span class="small">À PERSONNALISER</span></div>
+  <div class="list"><div class="row"><div class="badge">⚡</div><div><strong>La Zeno Corp arrive !</strong><span>Prépare-toi : le projet commence ici.</span></div></div><div class="row"><div class="badge">🎯</div><div><strong>Objectif : progresser ensemble</strong><span>Ajoute ici les actus de ton équipe.</span></div></div></div>
+</section>
+<section class="page" id="team">
+  <div class="section-title"><h2>👥 L'équipe</h2><span class="small">ROSTER</span></div>
+  <div class="hero"><div class="kicker">ZENO CORP</div><h1>ONE TEAM.</h1><p>Ajoute les pseudos des membres de ton équipe ici.</p></div>
+  <div class="list" style="margin-top:14px"><div class="row"><div class="badge">👑</div><div><strong>Ryuk</strong><span>Fondateur / Leader</span></div></div><div class="row"><div class="badge">🎮</div><div><strong>Membre 02</strong><span>Joueur</span></div></div><div class="row"><div class="badge">🎮</div><div><strong>Membre 03</strong><span>Joueur</span></div></div></div>
+</section>
+<section class="page" id="videos">
+  <div class="section-title"><h2>🎬 Vidéos</h2><span class="small">YOUTUBE</span></div>
+  <div class="hero"><div class="kicker">WATCH • LIKE • SUBSCRIBE</div><h1>À L'AFFICHE</h1><p>Ajoute le lien de ta chaîne YouTube pour présenter tes vidéos et tes Shorts.</p></div>
+  <div class="card" style="margin-top:14px"><h3>Ta chaîne YouTube</h3><p>Le lien sera à ajouter quand tu voudras personnaliser l'application.</p></div>
+</section>
+<section class="page" id="results">
+  <div class="section-title"><h2>🏆 Matchs & résultats</h2><span class="small">ESPORT</span></div>
+  <div class="row"><div class="badge">📅</div><div><strong>Aucun match ajouté</strong><span>Ajoute les prochaines compétitions ici.</span></div></div>
+  <div class="row"><div class="badge">🥇</div><div><strong>Notre palmarès</strong><span>Les victoires de la Zeno Corp seront affichées ici.</span></div></div>
+</section>
+<section class="page" id="settings">
+  <div class="section-title"><h2>⚙️ Personnalisation</h2></div>
+  <div class="card"><h3>Infos de l'équipe</h3><p>Pour l'instant, cette version est une maquette de départ. Les modifications peuvent être intégrées au code.</p><label class="small">Slogan</label><input value="PLAY AS ONE." aria-label="Slogan"><label class="small">Jeux principaux</label><input value="Fortnite • Rocket League • Roblox" aria-label="Jeux principaux"><button class="action" onclick="alert('Dans cette première maquette, les champs ne sont pas encore enregistrés. On pourra ajouter cette fonction ensuite !')">Enregistrer (démo)</button></div>
+</section>
+<footer>ZENO CORP • FAN / COMMUNITY PROJECT</footer>
+</main>
+<nav class="tabs" aria-label="Navigation">
+<button class="tab active" data-page="home"><b>⌂</b>Accueil</button>
+<button class="tab" data-page="team"><b>♟</b>Équipe</button>
+<button class="tab" data-page="videos"><b>▶</b>Vidéos</button>
+<button class="tab" data-page="results"><b>♜</b>Résultats</button>
+<button class="tab" data-page="settings"><b>⚙</b>Menu</button>
+</nav>
+<script>
+const tabs=[...document.querySelectorAll('.tab')],pages=[...document.querySelectorAll('.page')];
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===t));pages.forEach(p=>p.classList.toggle('active',p.id===t.dataset.page));window.scrollTo({top:0,behavior:'smooth'});}));
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
